@@ -172,8 +172,7 @@ const data = {
             "m784437563-3180dfa269b28789a8f786f6", //Place your next key here! <- app demo
             "m784438298-02f8d06be96a9c9e468770d4"], //Place your next key here! <- API GUI
     "APIs": ["m784438306-8c3c187da5a48781f6b4c6f4", //Place your next key here! <- API Google
-             "m784438301-f480bb16afc2bdcd045fc3aa", //Place your next key here! <- API SERP
-    ]
+             "m784438301-f480bb16afc2bdcd045fc3aa"] //Place your next key here! <- API SER
 }
 
 document.body.addEventListener("load", ShugaStatus.init());
