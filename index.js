@@ -168,8 +168,12 @@ const ShugaStatus = new shugaStatus();
 
 // Manipulate data here. Object with arrays of API tokens.
 const data = {
-    "My Category": ["m778874106-d364e78085e7c4a22ff7d38a", "m778959290-aec903f88269aa3621ba3ad5", "m778874126-2199efa94e371583fd42a7e7"],
-    "Repos": ["m782032055-ca8a6afe19b12773f1a64afb", "m782032070-381a2752b20465d844ce5182", "m782032075-c1a488d7daf392a9d7bd475a", "m782032076-509c8f5e5ea7bc6958eabd62"]
+    "app": ["m784437559-03d69d607e96335e6052e362",  //Place your first Key Here - app
+            "m784437563-3180dfa269b28789a8f786f6", //Place your next key here! <- app demo
+            "m784438298-02f8d06be96a9c9e468770d4"], //Place your next key here! <- API GUI
+    "APIs": ["m784438306-8c3c187da5a48781f6b4c6f4", //Place your next key here! <- API Google
+             "m784438301-f480bb16afc2bdcd045fc3aa", //Place your next key here! <- API SERP
+    ]
 }
 
 document.body.addEventListener("load", ShugaStatus.init());
