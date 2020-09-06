@@ -91,7 +91,7 @@ function shugaStatus() {
     }
     this.deinit = () => {
         let containers = document.querySelectorAll(".category:not(.news)");
-        for (i = containers.length-1; i >= 0; i--) {
+        for (let i = containers.length-1; i >= 0; i--) {
             containers[i].parentElement.removeChild(document.querySelectorAll(".category:not(.news)")[i]);
         }
     }
@@ -126,10 +126,10 @@ function shugaStatus() {
         req.open("GET", "updates.json", true);
         req.onload = () => {
             const news = document.querySelector(".news>.entry");
-            resp = JSON.parse(req.responseText);
+            let resp = JSON.parse(req.responseText);
             news.innerHTML = "";
             let n = 0;
-            for (i in resp) {
+            for (var i in resp) {
                 let date = new Date(Number(resp[i].date)).toLocaleDateString();
                 news.innerHTML += `<div class="news">
                     <b>${date}:</b> ${resp[i].body}
@@ -147,7 +147,7 @@ function shugaStatus() {
     this.progress = () => {
         const el = document.querySelector(".progress-master");
         const elt = document.querySelector(".progress-text");
-        value = Number(el.getAttribute("timer"));
+        let value = Number(el.getAttribute("timer"));
         value--;
         if (value <= 0) {
             ShugaStatus.refresh();
